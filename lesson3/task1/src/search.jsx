@@ -1,5 +1,5 @@
 import React from 'react';
-function SearchField(props) {
+const SearchField = (props) => {
   return (
     <div className="search">
       <h1 className="search__title">{`Hello, ${props.name}. What to search for you?`}</h1>
@@ -9,5 +9,5 @@ function SearchField(props) {
       </div>
     </div>
   );
-}
+};
 export default SearchField;
