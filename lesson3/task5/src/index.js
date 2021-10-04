@@ -1,19 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles.css';
-const rootElement = document.querySelector('#root');
 
-const element = (
-  <>
-    <h1 class="title">Todo List</h1>
-    <main class="todo-list">
-      <div class="actions">
-        <input class="task-input" type="text" />
-        <button class="btn create-task-btn">Create</button>
-      </div>
-      <ul class="list"></ul>
-    </main>
-  </>
-);
-
-ReactDOM.render(element, rootElement);
+const exampDate = new Date(Fri Jan 01 1971 08:49:12 GMT+0300);
+console.log(exampDate.getMilliseconds())
