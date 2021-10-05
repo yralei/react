@@ -1,5 +1,5 @@
-import React from 'react';
-class GoodButton extends React.Component {
+import React, { Component } from 'react';
+class GoodButton extends Component {
   handleClick(e) {
     alert(e.target.textContext);
   }
