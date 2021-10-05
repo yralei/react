@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 class GoodButton extends Component {
-  handleClick(e) {
-    alert(e.target.textContext);
+  handleClick(event) {
+    alert(event.target.textContext);
   }
   render() {
     <button className="fancy-button" onClick={this.handleClick}>
