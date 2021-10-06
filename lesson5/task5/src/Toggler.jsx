@@ -27,8 +27,8 @@ import React, { Component } from 'react';
 // export default Toggler;
 
 class Toggler extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       isToggleOn: false,
     };
@@ -40,7 +40,7 @@ class Toggler extends Component {
   };
   render() {
     return (
-      <button onClick={this.handleClick} className="toggler">
+      <button className="toggler" onClick={this.handleClick}>
         {this.state.isToggleOn ? 'ON' : 'OFF'}
       </button>
     );
