@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 class Toggler extends Component {
   state = {
     status: false,
-    switchButton: 'OFF',
+    switchButton: 'Off',
   };
 
   handleClick() {
     this.setState({
       status: !this.state.status,
-      switchButton: !this.state.status ? 'ON' : 'OFF',
+      switchButton: !this.state.status ? 'On' : 'Off',
     });
   }
 
