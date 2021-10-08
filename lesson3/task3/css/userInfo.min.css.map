@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,AAAC,CACT,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CAOpB,AALE,AAAD,gBAAO,AAAC,CACN,WAAW,CAAE,GAAG,CAChB,OAAO,CAAE,GAAG,CACZ,WAAW,CAAE,GAAG,CACjB",
-    "sources": [
-        "../src/userInfo.scss"
-    ],
-    "names": [],
-    "file": "userInfo.min.css"
-}
