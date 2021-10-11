@@ -15,8 +15,7 @@ class Life extends Component {
   }
 
   componentDidUpdate(pervProps, pervState) {
-    console.log('componentDidUpdate(pervProps, pervState): some updates based on new props');
-    return this.props !== pervProps;
+    console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
   }
 
   componentWillUnmount() {
