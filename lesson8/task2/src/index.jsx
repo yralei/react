@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import NumbersList from './NumbersList';
+import Clock from './Clock.jsx';
+import App from './App.jsx';
 
 const rootElement = document.querySelector('#root');
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(<NumbersList numbers={numbers} />, rootElement);
+
+const element = <App />;
+ReactDOM.render(element, rootElement);

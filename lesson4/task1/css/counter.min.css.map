@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACP,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACtB,WAAW,CAAE,MAAM,CACnB,MAAM,CAAE,iBAAiB,CACzB,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,GAAG,CACZ,MAAM,CAAE,GAAG,CACX,UAAU,CAAE,MAAM,CACnB",
-    "sources": [
-        "../src/counter.scss"
-    ],
-    "names": [],
-    "file": "counter.min.css"
-}
