@@ -1,28 +1,13 @@
 import React, { Component } from 'react';
 
 class UserForm extends Component {
-  // state = {
-  //   name: '',
-  //   student: '',
-  //   occupation: '',
-  //   about: '',
-  // };
-
-  // handleChange = e => {
-  //   const { name, value, checked, type } = e.target;
-  //   const val = type === 'checkbox' ? checked : value;
-  //   this.setState({
-  //     [name]: val,
-  //   });
-  // };
-
   handleSubmit = e => {
     e.preventDefault();
     const formData = [...new FormData(this.formRef)].reduce(
       (acc, [name, value]) => ({ ...acc, [name]: value }),
       {},
     );
-    console.log(formData);
+    this.props.onSubmit(formData);
   };
 
   setRef = node => {
