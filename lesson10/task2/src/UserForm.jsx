@@ -20,5 +20,4 @@ const UserForm = ({ userData, handleChange }) => {
     </form>
   );
 };
-
 export default UserForm;

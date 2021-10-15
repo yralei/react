@@ -8,5 +8,4 @@ const Profile = ({ userData, handleChange }) => {
     </div>
   );
 };
-
 export default Profile;

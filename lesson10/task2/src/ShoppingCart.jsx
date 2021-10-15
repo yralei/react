@@ -15,11 +15,6 @@ class ShoppingCart extends Component {
         name: 'iPad Pro',
         price: 799,
       },
-      {
-        id: '3',
-        name: 'iPad Pro',
-        price: 799,
-      },
     ],
   };
   render() {
@@ -32,5 +27,4 @@ class ShoppingCart extends Component {
     );
   }
 }
-
 export default ShoppingCart;
