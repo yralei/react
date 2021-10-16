@@ -23,10 +23,9 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <EvenNumbers title="Even numbers" number={this.state.number} />
         <Numbers title="All numbers" number={this.state.number} />
+        <EvenNumbers title="Even numbers" number={this.state.number} />
         <OddNumbers title="Odd numbers" number={this.state.number} />
-        <Numbers title="All numbers" number={17} />
       </div>
     );
   }
