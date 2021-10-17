@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Dialog = ({ onClose, isOpen, children, title }) => {
+const Dialog = ({ isOpen, children, title, onClose }) => {
   if (!isOpen) {
     return null;
   }
-
   return (
     <div className="dialog">
       <div className="dialog__heading">
@@ -14,7 +13,7 @@ const Dialog = ({ onClose, isOpen, children, title }) => {
           +
         </button>
       </div>
-      <div className="dialog_content">{children}</div>
+      <div className="dialog__content">{children}</div>
     </div>
   );
 };
@@ -25,7 +24,6 @@ Dialog.propTypes = {
   title: PropTypes.string,
   onClose: PropTypes.func.isRequired,
 };
-
 Dialog.defaultProps = {
   isOpen: false,
   title: '',
