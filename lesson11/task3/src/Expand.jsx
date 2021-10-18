@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Expand extends Component {
   state = {
     isOpen: false,
   };
+
   expandToggler = () => {
     this.setState({
       isOpen: !this.state.isOpen,
