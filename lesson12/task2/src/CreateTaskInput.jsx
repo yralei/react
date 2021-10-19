@@ -23,9 +23,9 @@ class CreateTaskInput extends Component {
       <div className="create-task">
         <input
           type="text"
-          className="create-task__input"
           value={this.state.value}
           onChange={this.handleChange}
+          className="create-task__input"
         />
         <button className="btn create-task__btn" onClick={this.handleTaskCreate}>
           Create

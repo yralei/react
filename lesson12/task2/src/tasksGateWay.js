@@ -1,7 +1,7 @@
 const baseUrl = 'https://616f39bd715a630017b39bc3.mockapi.io/api/v1/tasks';
 
 export const createTask = taskData => {
-  fetch(baseUrl, {
+  return fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;utc-8',
@@ -9,7 +9,7 @@ export const createTask = taskData => {
     body: JSON.stringify(taskData),
   }).then(response => {
     if (!response.ok) {
-      throw new Error('Fail to create task');
+      throw new Error('Faild to ceate task');
     }
   });
 };
@@ -21,7 +21,7 @@ export const fetchTasksList = () => {
         return res.json();
       }
     })
-    .then(tasksList => tasksList.map(({ id, ...task }) => ({ id, ...task })));
+    .then(tasksList => tasksList.map(({ _id, ...task }) => ({ id: _id, ...task })));
 };
 
 export const updateTask = (taskId, taskData) => {
@@ -33,7 +33,7 @@ export const updateTask = (taskId, taskData) => {
     body: JSON.stringify(taskData),
   }).then(response => {
     if (!response.ok) {
-      throw new Error('Fail to create task');
+      throw new Error('Faild to ceate task');
     }
   });
 };
@@ -43,7 +43,7 @@ export const deleteTask = taskId => {
     method: 'DELETE',
   }).then(response => {
     if (!response.ok) {
-      throw new Error('Fail to delete task');
+      throw new Error('Faild to ceate task');
     }
   });
 };
