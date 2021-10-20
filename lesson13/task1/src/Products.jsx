@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Products() {
+const Products = () => {
   return (
     <div className="page__content">
       <h1>Products</h1>
@@ -9,5 +9,5 @@ function Products() {
       <Link to="/contacts">To Contacts</Link>
     </div>
   );
-}
+};
 export default Products;
