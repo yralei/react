@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 import User from './User';
 
 const App = () => {
@@ -18,7 +17,9 @@ const App = () => {
             </li>
           </ul>
           <Switch>
-            <Route path="/users/:userId" component={User}></Route>
+            <Route path="/users/:userId">
+              <User />
+            </Route>
             <Route path="/">
               <span>Select a user please</span>
             </Route>
